@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Tracker</title>
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/search.css">
+    <link rel="shortcut icon" href="/Logo.png" type="image/png"/>
+</head>
+<body>
+    <nav>
+        <img class="Logo-img" src="/Logo.png" alt="Logo"/>
+        <h1 class="d-inline title ml-1" id="main-title">CryptoView</h1>
+        <button class="f-right nav-button" id="nav-search-button"> Search</button>
+
+    </nav>
+    <section class="mt-1">
+        <h1 class="color-yellow text-center ">Search</h1>
+        <div class="search-container mt-1">
+            <form action="" method="GET">
+            <input type="text" placeholder="Enter Coin Name.." name="q"/>
+            <input type="submit" value="Search"/>
+        </form>
+        </div>
+        <hr/>
+        <div class="search-container-result mt-1" id="search-results">
+        </div>
+    </section>
+    <footer>
+        <p class="d-inline"> &copy;CryptoTracker|Developed by Anitta..</p>
+
+        <a href="https://github.com/AnittaTomichan/Cyrptocurrency-Tracker" target="_blank">
+            <img src="/Github logo.png" alt="Github logo" class="footer-image f-right"/>
+        </a>
+
+    </footer>
+    <script src="/common.js"></script>
+    <script src="/search.js"></script>
+</body>
+</html>

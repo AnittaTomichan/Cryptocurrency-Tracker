@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Tracker</title>
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/detail.css">
+    <link rel="shortcut icon" href="/Logo.png" type="image/png"/>
+</head>
+<body>
+    <nav>
+        <img class="Logo-img" src="/Logo.png"  alt="Logo"/>
+        <h1 class="d-inline title ml-1" id="main-title">CryptoView</h1>
+        <button class="f-right nav-button" id="nav-serach-button"> Search</button>
+
+    </nav>
+    <!--description-->
+    <section class="flex-container">
+        <img id="coin-logo" alt="coin logo" class="main-logo" >
+        <div class="main-content">
+            <h1 class="mb-1 color-yellow" id="coin-name">...</h1>
+            <div class="flex-container space-around mb-1 mt-1">
+                <p>₹<span id="inr-price">...</span></p>
+                <p>$<span id="usd-price">...</span></p>
+                <p> €<span id="eur-price">...</span></p>
+                <p> £<span id="gbp-price">...</span></p>
+            </div>
+            <h3 class="mt-1">Description:</h3>
+            <p id="coin-description">Loading..</p>
+        </div>
+
+
+    </section>
+    <section class="ml-5 mr-5 mt-1">
+        <h1 class="color-yellow mb-1">Price History</h1>
+        <canvas id="myChart" width="100" height="25"></canvas>
+           
+    </section>
+    <footer>
+        <p class="d-inline "> &copy;CryptoTracker|</p>
+
+        <a href="https://github.com/AnittaTomichan/Cyrptocurrency-Tracker" target="_blank">
+            <img src="/Github logo.png" alt="Github logo" class="footer-image f-right"/>
+        </a>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/common.js"></script>
+    <script src="/detail.js"></script>
+</body>
+</html>
